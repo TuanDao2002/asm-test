@@ -17,15 +17,15 @@ main {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-/* .store-container::-webkit-scrollbar {
+.store-container::-webkit-scrollbar {
     display: none;
-} */
+}
   
 /* Hide scrollbar for IE, Edge and Firefox */
-/* .store-container {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-} */
+.store-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
 
 .store-containe:hover {
     cursor: pointer;
