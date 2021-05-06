@@ -51,8 +51,8 @@ function autoScroll(containerName, item) {
     container.onmouseleave = function() {
         stop = 'false';
     }
-    setup(container, items);
     if (items.length > 5) {
+        setup(container, items);
         setInterval(function() {
             startScroll(container, items, stop);
         }, 25);
@@ -63,4 +63,5 @@ function autoScroll(containerName, item) {
 
 autoScroll("store-container", "store");
 autoScroll("product-container", "product");
-// autoScroll("feature-container", "feature");
+autoScroll("feature-container first", "feature first");
+autoScroll("feature-container last", "feature last");
