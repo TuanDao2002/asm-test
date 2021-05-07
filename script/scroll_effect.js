@@ -52,16 +52,17 @@ function autoScroll(containerName, item) {
         stop = 'false';
     }
     if (items.length > 5) {
+        container.style.overflowY = "hidden";
+        container.style.overflowX = "scroll";
         setup(container, items);
         setInterval(function() {
             startScroll(container, items, stop);
         }, 25);
     }
 
-    
 }
 
 autoScroll("store-container", "store");
 autoScroll("product-container", "product");
 autoScroll("feature-container first", "feature first");
-autoScroll("feature-container last", "feature last");
+autoScroll("feature-container last", "feature-last");
