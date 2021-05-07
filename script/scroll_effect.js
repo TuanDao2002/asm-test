@@ -1,4 +1,4 @@
-var horMargin = 50;
+var horMargin = 40;
 
 // Duplicate the length of the container
 function setup(container, items) {
@@ -54,6 +54,7 @@ function autoScroll(containerName, item) {
     if (items.length > 5) {
         container.style.overflowY = "hidden";
         container.style.overflowX = "scroll";
+        container.style.flexWrap = "nowrap";
         setup(container, items);
         setInterval(function() {
             startScroll(container, items, stop);
